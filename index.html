@@ -1,148 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DJ Fortuna | Página Oficial</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #111; color: #fff; padding: 20px; line-height: 1.6; }
-    h1, h2 { color: #ff0066; }
-    button { margin-left: 10px; padding: 5px 10px; cursor: pointer; background: #ff0066; border: none; color: #fff; border-radius: 4px; }
-    img { max-width: 300px; display: block; margin: 10px 0; }
-    ul { list-style: none; padding-left: 0; }
-    li { margin: 5px 0; }
-    a { color: #00f; text-decoration: underline; }
-    .section { margin-bottom: 30px; }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DJ | Página Oficial</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #fff;
+        }
+        header {
+            background: url('https://images.unsplash.com/photo-1511379938547-c1f69419868d') center/cover no-repeat;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 4rem;
+            text-shadow: 0 0 15px #000;
+        }
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #e60073;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            margin-top: 20px;
+        }
+        .music-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .contact {
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Título -->
-  <div class="section">
-    <h1 id="titulo">DJ Fortuna — House, Tech House & Vibrações
-      <button onclick="editarTexto('titulo')">Editar</button>
-    </h1>
-  </div>
+<header>
+    <h1>DJ Fortuna — House, Tech House & Vibrações Eletrónicas</h1>
+</header>
 
-  <!-- Descrição -->
-  <div class="section">
-    <h2 id="descricao">Bem-vindo à página oficial do DJ Fortuna!
-      <button onclick="editarTexto('descricao')">Editar</button>
-    </h2>
-  </div>
+<section id="sobre">
+    <h2>Sobre o DJ</h2>
+    <p>DJ Fortuna é um DJ versátil com foco em House e Tech House, trazendo vibrações energéticas e misturas envolventes para festas, clubes e eventos privados. Som moderno, groove constante e performances que mantêm o público sempre ligado.</p>
+</section>
 
-  <!-- Imagem do DJ -->
-  <div class="section">
-    <img id="foto" src="https://via.placeholder.com/300x200.png?text=DJ+Fortuna" alt="DJ Fortuna">
-    <button onclick="editarImagem('foto')">Mudar Imagem</button>
-  </div>
+<section id="musica">
+    <h2>Música & Mixes</h2>
+    <div class="music-grid">
+        <div>
+            <h3>Mix #1</h3>
+            <iframe 
+width="100%"
+  height="150"
+  src="https://www.youtube.com/embed/EyFlf9oQx4g?modestbranding=1&rel=0"
+  title="DJ Fortuna – Vídeo"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen>
+</iframe>
 
-  <!-- Eventos -->
-  <div class="section">
-    <h2>Próximos Eventos
-      <button onclick="editarLista('eventos')">Editar</button>
-    </h2>
-    <ul id="eventos">
-      <li>25 Nov 2025 - Club XYZ, Lisboa</li>
-      <li>10 Dez 2025 - Festival ABC, Porto</li>
-      <li>05 Jan 2026 - Evento LMN, Faro</li>
-    </ul>
-  </div>
+        </div>
+        <div>
+            <h3>Mix #2</h3>
+            <iframe width="100%" height="150" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+        </div>
+        <div>
+            <h3>Mix #3</h3>
+            <iframe width="100%" height="150" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+        </div>
+    </div>
+</section>
 
-  <!-- Música / Playlists -->
-  <div class="section">
-    <h2>Playlists
-      <button onclick="editarLista('musica')">Editar</button>
-    </h2>
-    <ul id="musica">
-      <li>House Vibes</li>
-      <li>Tech House Mix</li>
-      <li>Vibrações Noturnas</li>
-    </ul>
-  </div>
+<section id="contacto" class="contact">
+    <h2>Contacto para Eventos</h2>
+    <p>Reservas para festas, discotecas e eventos privados.</p>
+    <p><strong>Email:</strong> booking@tudj.com</p>
+    <p><strong>Telefone:</strong> +351 900 000 000</p>
+    <a href="mailto:booking@tudj.com" class="btn">Fazer Reserva</a>
+</section>
 
-  <!-- Contactos -->
-  <div class="section">
-    <h2>Contactos
-      <button onclick="editarLista('contactos')">Editar</button>
-    </h2>
-    <ul id="contactos">
-      <li>Email: djfortuna@example.com</li>
-      <li>Instagram: <a href="https://instagram.com/djfortuna" target="_blank">djfortuna</a></li>
-      <li>Facebook: <a href="https://facebook.com/djfortuna" target="_blank">djfortuna</a></li>
-    </ul>
-  </div>
-
-  <script>
-    // Função para salvar no localStorage
-    function salvar(chave, valor) {
-      localStorage.setItem(chave, valor);
-    }
-
-    // Função para carregar do localStorage
-    function carregar(chave, defaultValue) {
-      return localStorage.getItem(chave) || defaultValue;
-    }
-
-    // Editar texto simples
-    function editarTexto(id) {
-      const elemento = document.getElementById(id);
-      const novoTexto = prompt("Insere o novo texto:", elemento.textContent);
-      if (novoTexto !== null) {
-        elemento.textContent = novoTexto;
-        salvar(id, novoTexto);
-      }
-    }
-
-    // Editar imagem via URL
-    function editarImagem(id) {
-      const elemento = document.getElementById(id);
-      const novaImagem = prompt("Insere o URL da nova imagem:", elemento.src);
-      if (novaImagem) {
-        elemento.src = novaImagem;
-        salvar(id, novaImagem);
-      }
-    }
-
-    // Editar listas (eventos, música, contactos)
-    function editarLista(id) {
-      const elemento = document.getElementById(id);
-      let items = [];
-      elemento.querySelectorAll('li').forEach(li => items.push(li.textContent));
-      let novoConteudo = prompt("Insere os itens separados por vírgula:", items.join(', '));
-      if (novoConteudo !== null) {
-        elemento.innerHTML = '';
-        novoConteudo.split(',').forEach(item => {
-          const li = document.createElement('li');
-          li.textContent = item.trim();
-          elemento.appendChild(li);
-        });
-        salvar(id, novoConteudo);
-      }
-    }
-
-    // Carregar conteúdo salvo
-    window.onload = () => {
-      const textos = ['titulo', 'descricao', 'foto', 'eventos', 'musica', 'contactos'];
-      textos.forEach(id => {
-        const valor = carregar(id, null);
-        if (valor) {
-          if (id === 'foto') document.getElementById(id).src = valor;
-          else if (['eventos','musica','contactos'].includes(id)) {
-            const lista = document.getElementById(id);
-            lista.innerHTML = '';
-            valor.split(',').forEach(item => {
-              const li = document.createElement('li');
-              li.textContent = item.trim();
-              lista.appendChild(li);
-            });
-          } else {
-            document.getElementById(id).textContent = valor;
-          }
-        }
-      });
-    }
-  </script>
+<footer>
+    © 2025 DJ Fortuna - Todos os direitos reservados.
+</footer>
 
 </body>
 </html>
